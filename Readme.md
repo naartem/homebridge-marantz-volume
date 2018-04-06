@@ -40,6 +40,8 @@ iOS 10 adds HomeKit shortcuts to the iOS Control Center, so you can adjust the v
 
 Add as an accessory by editing the homebridge config.json file.
 
+** For newer Denon models ( > 2016), add port number 8080 next to the host ip address **
+
 ## Simple Example
 
 ```
@@ -52,6 +54,17 @@ Add as an accessory by editing the homebridge config.json file.
 ]
 ```
 
+## Simple Example NEW DENON MODELS >2016
+
+```
+"accessories": [
+  {
+    "accessory":      "marantz-volume",
+    "name":           "Stereo Volume",
+    "host":           "192.168.1.15:8080"
+  }
+]
+```
 ## Multiple Zones Example
 
 If your receiver supports a 2nd zone, add
